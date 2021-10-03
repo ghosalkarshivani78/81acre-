@@ -1,0 +1,130 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="shivani81acre.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+   
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	 <link href="Content/css/81estate.css" rel="stylesheet" />
+    <link href="Content/css/bootstrap.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+	
+	<title>Real Estate Agency</title>
+  </head>
+    
+<body>
+    <form runat="server">
+       <!--header -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+			<a class="navbar-brand ml-5" href="#">
+				<h1 class="navh1">81acres</h1>
+				<h6 class="navh6">Indias No.1 Property Portal</h6>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto mr-5">
+					<li class="nav-item"><a class="nav-link mr-3" href="#">Home</a></li>
+					<li class="nav-item"><a class="nav-link mr-3" href="#">Residential</a></li>
+					<li class="nav-item"><a class="nav-link mr-3" href="#">Commercial</a></li>
+					<li class="nav-item"><a class="nav-link mr-3" href="#">Agriculture</a></li>
+					<li class="nav-item"><a class="nav-link mr-3" href="#">About</a></li>
+					<li class="nav-item"><a class="nav-link mr-3" href="#">Services</a></li>
+					<li class="nav-item"><a class="nav-link mr-3" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link mr-3" href="Admin/dashborad.aspx">Admin</a></li>
+				</ul>
+			</div>
+	</nav>        
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+           <!-- footer -->
+        <footer class="bg-light text-dark py-5">
+		<div class="container">
+		<div class="row">
+			<div class="col-md-4 logofooter">
+				<h1 class="navh1">81acres</h1>
+				<h6 class="navh6">Indias No.1 Property Portal</h6>
+				<p class="footerinfo text-left">The Capital Square Pvt Ltd was established in the year 2016 with the aim and objective of providing homes for every individual who is ready to purchase their dream home but requires professional assistance from experts in the field who will genuinely guide them and
+				do proper analysis before investment from the client.</p>
+				<div class="d-flex flex-row bd-highlight mb-3">
+					<div class="footericoncolor ">
+						<i class="fa fa-facebook"></i>
+					</div>
+					<div class="footericoncolor">
+						<i class="fa fa-twitter"></i>
+					</div>
+					<div class="footericoncolor">
+						<i class="fa fa-behance"></i>
+					</div>
+					<div class="footericoncolor">
+						<i class="fa fa-instagram"></i>
+					</div>
+					<div class="footericoncolor">
+						<i class="fa fa-linkedin" ></i>
+					</div>
+				</div>
+					
+			</div>
+
+			<div class="col-md-8">
+			<div class="row">
+				<div class="col-md-4">
+					<h3 class="bottamline pb-3">About</h3>
+					<ul class="list py-2 listcolor">
+						<li class="footerlistcolor pb-3">Company</li>
+						<li class="footerlistcolor pb-3">Community</li>
+						<li class="footerlistcolor pb-3">Carrier</li>
+						<li class="footerlistcolor pb-3">News</li>
+						<li class="footerlistcolor pb-3">Contact</li>
+				</div>
+			
+				<div class="col-md-4">
+					<h3 class="bottamline pb-3">Links</h3>
+					<ul class="list py-2 listcolor">
+						<li class="footerlistcolor pb-3">For Rent</li>
+						<li class="footerlistcolor pb-3">For Sale</li>
+						<li class="footerlistcolor pb-3">Commercial</li>
+						<li class="footerlistcolor pb-3">Agents</li>
+						<li class="footerlistcolor pb-3">Property Guides</li>
+				</div>
+			
+				<div class="col-md-4">
+					<h3 class="bottamline pb-3">Help</h3>
+					<ul class="list py-2 listcolor">
+						<li class="footerlistcolor pb-3">Payments</li>
+						<li class="footerlistcolor pb-3">Shipping</li>
+						<li class="footerlistcolor pb-3">Cancellation</li>
+						<li class="footerlistcolor pb-3">FAQ</li>
+						<li class="footerlistcolor pb-3">Report</li>
+                        </ul>
+				</div>
+			</div>
+			</div>
+		</div>
+	    </div>
+	<hr>
+	<div class="container ">
+		<div class="d-flex bd-highlight mb-3">
+			<div class="p-2 bd-highlight termscondition">Terms & Conditions</div>
+			<div class="p-2 bd-highlight termscondition">Privacy Policy</div>
+			<div class="p-2 bd-highlight termscondition">Site Map</div>
+			<div class="ml-auto p-2 bd-highlight">81acre.com @ 2021. All Rights Reserved.</div>
+		</div>
+	</div>
+</footer>
+     
+
+    </form>
+</body>
+</html>
